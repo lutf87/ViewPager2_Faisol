@@ -56,9 +56,10 @@ class FriendsFragment: Fragment() {
             "+62 823-3305-6495", "Nglamong-Pare")
         )
     }
+    @SuppressLint("UseRequireInsteadOfGet")
     private fun friendsAppear(){
         rv_myfriendslist.layoutManager=LinearLayoutManager(activity)
-        rv_myfriendslist.adapter=MyFriendsAdapter(requireActivity(), friendsList)
+        rv_myfriendslist.adapter=MyFriendsAdapter(activity!!, friendsList)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
