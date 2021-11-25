@@ -6,14 +6,26 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Friends?"
-        android:textColor="@color/white"
-        android:fontFamily="@font/collegiateregular"
-        android:textSize="50sp"
         android:layout_marginLeft="@dimen/dimen_H"
-        android:layout_marginTop="@dimen/dimen_V"/>
+        android:layout_marginTop="@dimen/dimen_V"
+        android:fontFamily="@font/collegiateregular"
+        android:text="My Friends List"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_myfriendslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:layout_width="wrap_content"
